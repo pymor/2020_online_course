@@ -5,8 +5,9 @@ Materials for the 2020 pyMOR online course
 
 ### Python programming
 
-Note that due to time constraints we are unable to give an introduction to Python/NumPy/SciPy,
-but there are plenty of free online resources to learn the basics before the start of the School:
+Note that due to time constraints,
+we are unable to give an introduction to Python/NumPy/SciPy,
+but there are plenty of free online resources to learn the basics:
 
 - for inexperienced programmers:
     - https://greenteapress.com/wp/think-python-2e/
