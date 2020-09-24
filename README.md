@@ -29,10 +29,15 @@ but there are plenty of free online resources to learn the basics:
 
 There are several monographs available on model order reduction. In particular:
 
-- https://my.siam.org/Store/Product/viewproduct/?ProductId=28736188
-- https://www.springer.com/gp/book/9783319154305
-- https://www.springer.com/gp/book/9783319224695
+- [P. Benner, M. Ohlberger, A. Cohen, K. Willcox, "Model Reduction and Approximation: Theory and Algorithms", 2017](https://doi.org/10.1137/1.9781611974829)
+- [A. Quarteroni, A. Manzoni, F. Negri, "Reduced Basis Methods for Partial Differential Equations", 2016](https://doi.org/10.1007/978-3-319-15431-2)
+- [J. S. Hesthaven, G. Rozza, B. Stamm, "Certified Reduced Basis Methods for Parametrized Partial Differential Equations", 2016](https://doi.org/10.1007/978-3-319-22470-1)
 
 Freely available lecture notes are:
 
-- https://pnp.mathematik.uni-stuttgart.de/ians/haasdonk/publications/RBtutorial_preprint_update_with_header.pdf
+- [Uni Stuttgart RB lecture notes](https://pnp.mathematik.uni-stuttgart.de/ians/haasdonk/publications/RBtutorial_preprint_update_with_header.pdf)
+- [Uni Hamburg MOR lecture notes](https://www.math.uni-hamburg.de/home/voigt/Modellreduktion_SoSe19/Notes_ModelReduction.pdf)
+
+Also see:
+
+- [MOR Wiki](http://modelreduction.org)
