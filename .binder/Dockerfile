@@ -14,11 +14,11 @@ RUN pip install -r /tmp/requirements.txt && rm /tmp/requirements.txt
 USER ${NB_USER}
 
 COPY tutorials /pymor/tutorials
-# COPY exercises /pymor/exercises
+ COPY exercises /pymor/exercises
 
 ENV JUPYTER_TOKEN=${PYMOR_JUPYTER_TOKEN} \
     USER=${NB_USER} \
     HOME=/pymor
 
 ENTRYPOINT []
-WORKDIR /pymor/tutorials
+WORKDIR /pymor/
