@@ -11,7 +11,9 @@ to install pyMOR following the following instructions should you want to work on
 
 ### Manylinux Wheels (Linux)
 
+## pyMOR documentation
 
+You can find the documentation [here](https://docs.pymor.org/2020-online-course/index.html)
 
 ## Literature
 
