@@ -10,7 +10,7 @@ RUN useradd -d /pymor --shell /bin/bash -u ${NB_UID} -o -c "" -m ${NB_USER}
 
 # do local package install before requirements to avoid conflict
 COPY requirements.txt /tmp/
-RUN pip install -r /tmp/requirements.txt && rm /tmp/requirements.txt
+RUN pip install -Ur /tmp/requirements.txt && rm /tmp/requirements.txt
 USER ${NB_USER}
 
 COPY tutorials /pymor/tutorials
