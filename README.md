@@ -28,7 +28,7 @@ jupyter notebook --notebook-dir=${TARGET_DIRECTORY}/material/exercises
 
 ### Docker
 
-If you have a working docker setup you can also that.
+If you have a working docker setup you can use also to work on the exercises.
 
 ```
 # first build the image
