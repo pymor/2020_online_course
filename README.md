@@ -59,7 +59,7 @@ If cannot or do not want to install pymMOR you can play with the exercises and t
 the mybinder.org infrastructure:
 [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/pymor/2020_online_course/main)
 
-Please note that this a free servive with usage limitations (no persistent data, compute capacity, concurrent users),
+Please note that this a free service with usage limitations (no persistent data, compute capacity, concurrent users),
 with which we are not affiliated. You can read more about it [here](https://mybinder.readthedocs.io/en/latest/faq.html)
 
 
