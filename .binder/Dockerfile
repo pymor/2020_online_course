@@ -11,10 +11,11 @@ RUN useradd -d /pymor --shell /bin/bash -u ${NB_UID} -o -c "" -m ${NB_USER}
 # do local package install before requirements to avoid conflict
 COPY requirements.txt /tmp/
 RUN pip install -Ur /tmp/requirements.txt && rm /tmp/requirements.txt
+COPY tutorials /pymor/tutorials
+RUN chown ${NB_USER} -R /pymor
+COPY exercises /pymor/exercises
 USER ${NB_USER}
 
-COPY tutorials /pymor/tutorials
- COPY exercises /pymor/exercises
 
 ENV JUPYTER_TOKEN=${PYMOR_JUPYTER_TOKEN} \
     USER=${NB_USER} \
