@@ -1,6 +1,69 @@
 # 2020_online_course
 Materials for the 2020 pyMOR online course
 
+## Installing pyMOR
+
+Since we are using a feature branch for the exercise and tutorial materials you will need
+to install pyMOR following the following instructions should you want to work on the exercises on your own machine.
+
+### Manylinux Wheels (Linux)
+
+To install pyMOR the appropiate wheel for you Python version (supported are 3.6,3.7 and 3.8) follow these steps in a
+terminal bash session:
+```
+export TARGET_DIRECTORY=${HOME}/pymor_course
+mkdir ${TARGET_DIRECTORY}
+git clone https://github.com/pymor/2020_online_course ${TARGET_DIRECTORY}/material
+python3 -m virtualenv ${TARGET_DIRECTORY}/virtualenv
+. ${TARGET_DIRECTORY}/virtualenv/bin/activate
+export WHL_VERSION=$(python -c 'import sys; m="m"; vi=sys.version_info; print(f"cp{vi[0]}{vi[1]}-cp{vi[0]}{vi[1]}{m if vi[1] < 8 else str()}-manylinux1_x86_64")')
+pip install ${TARGET_DIRECTORY}/material/packages/wheels/linux-64/pymor-2020_online_course-${WHL_VERSION}.whl[full]
+
+# now you can start a Jupter Notebook server to work on the exercises:
+jupyter notebook --notebook-dir=${TARGET_DIRECTORY}/material/exercises
+```
+
+### "plain" pip
+
+You can also install directly from source, but note this will need a minimal C compiler setup:
+```
+export TARGET_DIRECTORY=${HOME}/pymor_course
+mkdir ${TARGET_DIRECTORY}
+git clone https://github.com/pymor/2020_online_course ${TARGET_DIRECTORY}/material
+python3 -m virtualenv ${TARGET_DIRECTORY}/virtualenv
+. ${TARGET_DIRECTORY}/virtualenv/bin/activate
+
+pip install -r ${TARGET_DIRECTORY}/material/requirements.txt
+# now you can start a Jupter Notebook server to work on the exercises:
+jupyter notebook --notebook-dir=${TARGET_DIRECTORY}/material/exercises
+```
+
+### Docker
+
+If you have a working docker setup you can use also to work on the exercises.
+
+```
+# first build the image
+docker build --build-arg NB_USER=${USER} --build-arg NB_UID=$(id -u) -t pymor_course -f .binder/Dockerfile  .
+# then start the Jupyter server
+docker run pymor_course:latest bash -c "jupyter notebook --ip 0.0.0.0 --no-browser --notebook-dir=/pymor --NotebookApp.disable_check_xsrf=True"
+# now open the displayed URL (127.0.0.1) in your browser
+```
+
+### myBinder.org
+
+If cannot or do not want to install pymMOR you can play with the exercises and tutorials using
+the mybinder.org infrastructure:
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/pymor/2020_online_course/main)
+
+Please note that this a free service with usage limitations (no persistent data, compute capacity, concurrent users),
+with which we are not affiliated. You can read more about it [here](https://mybinder.readthedocs.io/en/latest/faq.html)
+
+
+## pyMOR documentation
+
+You can find the documentation [here](https://docs.pymor.org/2020-online-course/index.html)
+
 ## Literature
 
 ### Python programming
