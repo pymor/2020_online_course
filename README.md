@@ -53,6 +53,16 @@ docker run pymor_course:latest bash -c "jupyter notebook --ip 0.0.0.0 --no-brows
 # now open the displayed URL (127.0.0.1) in your browser
 ```
 
+### myBinder.org
+
+If cannot or do not want to install pymMOR you can play with the exercises and tutorials using
+the mybinder.org infrastructure:
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/pymor/2020_online_course/main)
+
+Please note that this a free servive with usage limitations (no persistent data, compute capacity, concurrent users),
+with which we are not affiliated. You can read more about it [here](https://mybinder.readthedocs.io/en/latest/faq.html)
+
+
 ## pyMOR documentation
 
 You can find the documentation [here](https://docs.pymor.org/2020-online-course/index.html)
