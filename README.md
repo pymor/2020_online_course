@@ -1,6 +1,18 @@
 # 2020_online_course
 Materials for the 2020 pyMOR online course
 
+## Installing pyMOR
+
+Since we are using a feature branch for the exercise and tutorial materials you will need
+to install pyMOR following the following instructions should you want to work on the exercises on your own machine.
+
+### Conda (OSX, Windows, Linux)
+
+
+### Manylinux Wheels (Linux)
+
+
+
 ## Literature
 
 ### Python programming
