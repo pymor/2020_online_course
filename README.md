@@ -26,6 +26,21 @@ pip install ${TARGET_DIRECTORY}/material/packages/wheels/linux-64/pymor-2020_onl
 jupyter notebook --notebook-dir=${TARGET_DIRECTORY}/material/exercises
 ```
 
+### "plain" pip
+
+You can also install directly from source, but note this will need a minimal C compiler setup:
+```
+export TARGET_DIRECTORY=${HOME}/pymor_course
+mkdir ${TARGET_DIRECTORY}
+git clone https://github.com/pymor/2020_online_course ${TARGET_DIRECTORY}/material
+python3 -m virtualenv ${TARGET_DIRECTORY}/virtualenv
+. ${TARGET_DIRECTORY}/virtualenv/bin/activate
+
+pip install -r ${TARGET_DIRECTORY}/material/requirements.txt
+# now you can start a Jupter Notebook server to work on the exercises:
+jupyter notebook --notebook-dir=${TARGET_DIRECTORY}/material/exercises
+```
+
 ### Docker
 
 If you have a working docker setup you can use also to work on the exercises.
