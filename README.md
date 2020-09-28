@@ -32,6 +32,7 @@ There are several monographs available on model order reduction. In particular:
 - [P. Benner, M. Ohlberger, A. Cohen, K. Willcox, "Model Reduction and Approximation: Theory and Algorithms", 2017](https://doi.org/10.1137/1.9781611974829)
 - [A. Quarteroni, A. Manzoni, F. Negri, "Reduced Basis Methods for Partial Differential Equations", 2016](https://doi.org/10.1007/978-3-319-15431-2)
 - [J. S. Hesthaven, G. Rozza, B. Stamm, "Certified Reduced Basis Methods for Parametrized Partial Differential Equations", 2016](https://doi.org/10.1007/978-3-319-22470-1)
+- [A. C. Antoulas, "Approximation of Large-Scale Dynamical Systems", 2005](https://doi.org/10.1137/1.9780898718713)
 
 Freely available lecture notes are:
 
