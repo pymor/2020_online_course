@@ -26,6 +26,18 @@ pip install ${TARGET_DIRECTORY}/material/packages/wheels/linux-64/pymor-2020_onl
 jupyter notebook --notebook-dir=${TARGET_DIRECTORY}/material/exercises
 ```
 
+### Docker
+
+If you have a working docker setup you can also that.
+
+```
+# first build the image
+docker build --build-arg NB_USER=${USER} --build-arg NB_UID=$(id -u) -t pymor_course -f .binder/Dockerfile  .
+# then start the Jupyter server
+docker run pymor_course:latest bash -c "jupyter notebook --ip 0.0.0.0 --no-browser --notebook-dir=/pymor --NotebookApp.disable_check_xsrf=True"
+# now open the displayed URL (127.0.0.1) in your browser
+```
+
 ## pyMOR documentation
 
 You can find the documentation [here](https://docs.pymor.org/2020-online-course/index.html)
